@@ -9,6 +9,19 @@ public class Music {
     }
 
     public Integer selection(Integer startIndex, String selection){
-        return null;
+        int buttonskips = 0;
+
+        for(int i = startIndex; i <playList.length; i++){
+
+            if(playList[i].equals(selection)){
+                return buttonskips;
+            }
+            else buttonskips++;
+        }
+
+
+
+
+        return buttonskips;
     }
 }
